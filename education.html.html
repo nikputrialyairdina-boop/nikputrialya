@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Education | Nik Putri Alya</title>
+
+<style>
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  font-family:Garamond, serif;
+  background: linear-gradient(180deg, #E3F2FD 0%, #BBDEFB 100%);
+  color:#0D47A1;
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+header{
+  background:#90CAF9;
+  color:white;
+  padding:25px 20px;
+  text-align:center;
+  font-weight:bold;
+  font-size:28px; /* sama size dengan About Me */
+  text-shadow:0 0 8px #99ccff;
+  border-bottom: 3px dashed #64B5F6;
+  box-shadow:0 2px 10px rgba(0,0,0,0.3);
+  border-radius:0 0 20px 20px;
+}
+nav ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  background:#BBDEFB;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+nav ul li a{
+  display:block;
+  color:#001a33;
+  padding:14px 22px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+nav ul li a:hover{
+  background:#90CAF9;
+  color:white;
+  border-radius:8px;
+  box-shadow:0 0 10px #80bfff;
+}
+main{
+  flex:1;
+  max-width:1000px;
+  margin:40px auto 130px auto;
+  padding:30px;
+  background:#BBDEFB;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+  text-align:center;
+}
+main h2{
+  font-size:28px; /* tajuk main */
+  color:#0D47A1;
+  text-shadow:0 0 5px #99ccff;
+  margin-bottom:15px;
+}
+main p{
+  font-size:18px;
+  line-height:1.7;
+  margin-bottom:20px;
+}
+.education-section{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:40px;
+  margin-top:40px;
+  flex-wrap:wrap;
+}
+.school-photo img{
+  width:250px;
+  border-radius:15px;
+  box-shadow:0 0 15px rgba(0,0,128,0.4);
+  transition:transform 0.3s, box-shadow 0.3s;
+}
+.school-photo img:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 25px #99ccff;
+}
+.connection-box{
+  background:#f0f6ff;
+  border:2px dashed #99b3ff;
+  border-radius:15px;
+  padding:20px;
+  width:250px;
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
+  text-align:center;
+  position:relative;
+}
+.connection-box::before{
+  content:"";
+  position:absolute;
+  left:-30px;
+  top:50%;
+  width:25px;
+  height:3px;
+  background:#80aaff;
+  transform:translateY(-50%);
+  border-radius:5px;
+}
+.connection-box p{
+  margin:0;
+  color:#003366;
+  font-size:18px;
+  font-weight:bold;
+}
+footer{
+  background:#001a33;
+  color:white;
+  text-align:center;
+  padding:15px 0;
+  bottom:0;
+  left:0;
+  width:100%;
+  font-size:0.9em;
+  font-weight:bold;
+  text-shadow:0 0 8px #80bfff;
+  box-shadow:0 -2px 10px rgba(0, 0, 0, .3);
+  position:fixed;
+  border-top:3px dashed #64B5F6;
+  border-radius:20px 20px 0 0;
+}
+.polaroid-gallery{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:30px;
+  margin-top:50px;
+}
+.polaroid{
+  background-color:#fff;
+  padding:10px 10px 25px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+  border-radius:10px;
+  width:200px;
+  transform:rotate(-3deg);
+  transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+.polaroid:nth-child(even){transform:rotate(4deg);}
+.polaroid:hover{
+  transform:scale(1.05) rotate(0deg);
+  box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+.polaroid img{
+  width:100%;
+  border-radius:8px;
+}
+.polaroid p{
+  font-size:14px;
+  color:#003366;
+  margin-top:8px;
+  font-style:italic;
+}
+</style>
+</head>
+
+<body>
+<header>
+  NIK PUTRI ALYA PERSONAL WEBSITE
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="aboutme.html">About Me</a></li>
+    <li><a href="family.html">Family</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="friends.html">Friends</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h2>💙 MY EDUCATION JOURNEY 💙</h2>
+  <p>Hi! I'm <strong>Nik Putri Alya</strong>. Here’s a glimpse of my educational path from school to university:</p>
+
+  <div class="education-section">
+    <div class="school-photo">
+      <img src="IMAGES/skdh.PNG" alt="SK Dato Hashim 2">
+    </div>
+    <div class="connection-box">
+      <p>Sekolah Kebangsaan Dato Hashim 2 🌸<br><small>(My primary school memories!)</small></p>
+    </div>
+  </div>
+
+  <div class="education-section">
+    <div class="school-photo">
+      <img src="IMAGES/smkpc2.JPEG" alt="SMK Pengkalan Chepa 2">
+    </div>
+    <div class="connection-box">
+      <p>Sekolah Menengah Kebangsaan Pengkalan Chepa 2 💫<br><small>(My amazing high school journey!)</small></p>
+    </div>
+  </div>
+
+  <div class="education-section">
+    <div class="school-photo">
+      <img src="IMAGES/uitm.JPEG" alt="UNIVERSITY TEKNOLOGI MARA">
+    </div>
+    <div class="connection-box">
+      <p>UNIVERSITY TEKNOLOGI MARA CAWANGAN KELANTAN 👩‍🎓<br><small>(My University Era!)</small></p>
+    </div>
+  </div>
+
+  <h2>📸 Polaroid Memories</h2>
+  <div class="polaroid-gallery">
+    <div class="polaroid">
+      <img src="IMAGES/irdina.jpg" alt="Primary School Memory">
+      <p>SK Dato Hashim 2 🌸</p>
+    </div>
+    <div class="polaroid">
+      <img src="IMAGES/kelas.jpg" alt="High School Memory">
+      <p>SMK Pengkalan Chepa 2 💫</p>
+    </div>
+    <div class="polaroid">
+      <img src="IMAGES/2.jpg" alt="University Life">
+      <p>UiTM Life 👩‍🎓</p>
+    </div>
+  </div>
+
+  <h2>📸 UiTM MACHANG SEM 1 UNTIL SEM 5</h2>
+  <div class="polaroid-gallery">
+    <div class="polaroid">
+      <img src="IMAGES/SEM1.jpg" alt="SEMESTER 1">
+      <p>SEMESTER 1</p>
+    </div>
+    <div class="polaroid">
+      <img src="IMAGES/SEM2.jpg" alt="SEMESTER 2">
+      <p>SEMESTER 2</p>
+    </div>
+    <div class="polaroid">
+      <img src="IMAGES/SEM3.jpg" alt="SEMESTER 3">
+      <p>SEMESTER 3</p>
+    </div>
+    <div class="polaroid">
+      <img src="IMAGES/SEM4.jpg" alt="SEMESTER 4">
+      <p>SEMESTER 4</p>
+    </div>
+    <div class="polaroid">
+      <img src="IMAGES/SEM5.jpg" alt="SEMESTER 5">
+      <p>SEMESTER 5</p>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2025 | This website is for educational purposes only for NIK PUTRI ALYA
+</footer>
+</body>
+</html>

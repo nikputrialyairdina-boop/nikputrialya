@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Family | Nik Putri Alya</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;}
+body{
+	margin:0;
+	font-family:Garamond, serif;
+	background:#E3F2FD url('https://www.transparenttextures.com/patterns/connected.png') repeat;
+	color:#0D47A1;
+	display:flex;
+	flex-direction:column;
+	min-height:100vh;
+}
+
+/* HEADER COMEL */
+header{
+	background:#64B5F6;
+	color:white;
+	padding:40px 20px;
+	text-align:center;
+	font-size:20px;
+	letter-spacing:1px;
+	box-shadow:0 2px 10px rgba(0,0,0,0.2);
+	font-family:'Fredoka One', cursive;
+	border-bottom:4px dashed #90CAF9;
+}
+header h1{margin:0;}
+
+/* NAV */
+nav{
+	background:#BBDEFB;
+	box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+nav ul{
+	list-style:none;
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+	margin:0;
+	padding:0;
+}
+nav ul li a{
+	display:block;
+	color:#0D47A1;
+	padding:14px 20px;
+	text-decoration:none;
+	font-weight:bold;
+	transition:0.3s;
+}
+nav ul li a:hover{
+	background:#90CAF9;
+	color:white;
+	border-radius:5px;
+}
+
+/* MAIN */
+main{
+	flex:1;
+	background:rgba(187,222,251,0.9);
+	width:90%;
+	max-width:1200px;
+	margin:50px auto 130px;
+	padding:40px;
+	border-radius:20px;
+	box-shadow:0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* MAIN TITLE */
+main h2{
+	font-size:28px;
+	margin-bottom:15px;
+	font-family:'Fredoka One', cursive;
+}
+main p{
+	color:#1A237E;
+	line-height:1.6;
+	margin-bottom:30px;
+}
+
+/* POLAROID GALLERY CREATIVE */
+.polaroid-gallery{
+	position: relative;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	gap:30px;
+	margin-top:30px;
+}
+
+.photo{
+	width:200px;
+	background:white;
+	padding:12px 12px 20px;
+	border-radius:12px;
+	box-shadow:4px 6px 15px rgba(0,0,0,0.2);
+	position:relative;
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.photo img{
+	width:100%;
+	border-radius:8px;
+}
+
+.photo p{
+	margin-top:10px;
+	font-size:15px;
+	font-style:italic;
+	text-align:center;
+	color:#0D47A1;
+}
+
+/* RANDOM ROTATION */
+.photo:nth-child(odd){transform: rotate(-4deg);}
+.photo:nth-child(even){transform: rotate(3deg);}
+
+/* HOVER EFFECT */
+.photo:hover{
+	transform:scale(1.08) rotate(0deg);
+	box-shadow:8px 10px 25px rgba(0,0,0,0.3);
+}
+
+/* STRING / TALi EFFECT */
+.photo::before{
+	content:"";
+	position:absolute;
+	top:-25px;
+	left:50%;
+	width:2px;
+	height:25px;
+	background:#0D47A1;
+	transform:translateX(-50%);
+}
+.photo::after{
+	content:"";
+	position:absolute;
+	top:-30px;
+	left:50%;
+	width:10px;
+	height:10px;
+	background:#0D47A1;
+	border-radius:50%;
+	transform:translateX(-50%);
+}
+
+/* FOOTER */
+footer{
+	background:#64B5F6;
+	color:white;
+	text-align:center;
+	padding:15px 0;
+	width:100%;
+	position:fixed;
+	bottom:0;
+	left:0;
+	font-size:0.9em;
+	letter-spacing:0.5px;
+	box-shadow:0 -2px 10px rgba(0,0,0,.3);
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>💙 Nik Putri Alya's Family 💙</h1>
+</header>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="aboutme.html">About Me</a></li>
+<li><a href="family.html">Family</a></li>
+<li><a href="education.html">Education</a></li>
+<li><a href="friends.html">Friends</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+</ul>
+</nav>
+
+<main>
+<h2>My Lovely Family 💙</h2>
+<p>My name is Nik Putri Alya. I am blessed with a small and loving family. I have two siblings, and I am the eldest. My family has always been my biggest source of support and motivation in life.</p>
+
+<div class="polaroid-gallery">
+	<div class="photo">
+		<img src="IMAGES/UMI BABA.JPG" alt="My Family">
+		<p>A candid moment with UMI & BABA 🤍</p>
+	</div>
+	<div class="photo">
+		<img src="IMAGES/baba.JPG" alt="Baba">
+		<p>BABA — AZRAN KHASMIRI, 53 years old, former government staff</p>
+	</div>
+	<div class="photo">
+		<img src="IMAGES/umi.JPG" alt="Umi">
+		<p>UMI — TUAN NORIZAN, 42 years old, loving housewife 💐</p>
+	</div>
+	<div class="photo">
+		<img src="IMAGES/comel.JPG" alt="Me">
+		<p>This is me, eldest daughter, studying at UiTM 💕</p>
+	</div>
+	<div class="photo">
+		<img src="IMAGES/koye.JPG" alt="Rayyan">
+		<p>RAYYAN — my younger brother, 16 years old, schooling at SMKPC1</p>
+	</div>
+	<div class="photo">
+		<img src="IMAGES/cafe.JPG" alt="Cafe">
+		<p>UMI & BABA love cafe hopping ☕</p>
+	</div>
+	<div class="photo">
+		<img src="IMAGES/raya.JPG" alt="Raya">
+		<p>Favourite picture with BABA ✨</p>
+	</div>
+</div>
+</main>
+
+<footer>
+<p>&copy; 2025 | Educational Purpose Only | Designed by NIK PUTRI ALYA IRDINA</p>
+</footer>
+
+</body>
+</html>
+

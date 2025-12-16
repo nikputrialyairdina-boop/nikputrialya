@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Me | Putri Alya</title>
+
+<style>
+/* ===== BODY ===== */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Garamond, serif;
+	background-color: #E3F2FD;
+	color: #0D47A1;
+	text-align: center;
+}
+
+/* ===== HEADER ===== */
+header {
+	background-color: #90CAF9;
+	padding: 25px;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+	margin: 0;
+	font-size: 34px;
+	letter-spacing: 2px;
+}
+
+/* ===== NAVIGATION ===== */
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background-color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+nav ul li a {
+	display: block;
+	padding: 14px 18px;
+	text-decoration: none;
+	color: #0D47A1;
+	font-weight: bold;
+}
+
+nav ul li a:hover {
+	background-color: #E3F2FD;
+	border-radius: 5px;
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+	max-width: 1000px;
+	margin: 40px auto 140px auto;
+	padding: 20px;
+}
+
+/* ===== ABOUT TEXT ===== */
+.about-box {
+	background-color: #BBDEFB;
+	padding: 30px;
+	border-radius: 20px;
+	box-shadow: 3px 3px 15px rgba(0,0,0,0.25);
+}
+
+.about-box h2 {
+	margin-top: 0;
+	font-size: 28px;
+}
+
+.about-box p {
+	font-size: 20px;
+	line-height: 1.8;
+}
+
+/* ===== SECTION TITLE ===== */
+.section-title {
+	margin: 60px 0 25px;
+	font-size: 26px;
+	letter-spacing: 1px;
+}
+
+/* ===== POLAROID SECTION ===== */
+.polaroid-section {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 35px;
+}
+
+/* ===== POLAROID CARD ===== */
+.polaroid {
+	background-color: #FFFFFF;
+	width: 230px;
+	padding: 15px 15px 30px;
+	border-radius: 10px;
+	box-shadow: 4px 6px 15px rgba(0,0,0,0.3);
+	transform: rotate(var(--angle));
+	transition: 0.3s;
+}
+
+.polaroid:hover {
+	transform: scale(1.05) rotate(0deg);
+}
+
+.polaroid img {
+	width: 100%;
+	border-radius: 5px;
+}
+
+.polaroid p {
+	margin-top: 12px;
+	font-size: 15px;
+	font-style: italic;
+	color: #0D47A1;
+}
+
+/* ===== RANDOM ROTATION ===== */
+.polaroid:nth-child(1){--angle:-4deg;}
+.polaroid:nth-child(2){--angle:3deg;}
+.polaroid:nth-child(3){--angle:-2deg;}
+.polaroid:nth-child(4){--angle:4deg;}
+
+/* ===== FOOTER (FIXED) ===== */
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #90CAF9;
+	color: #0D47A1;
+	padding: 15px;
+	font-size: 14px;
+	box-shadow: 0 -4px 10px rgba(0,0,0,0.25);
+}
+
+/* ===== AUDIO BUTTON ===== */
+.music-btn {
+	margin-top: 20px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 20px;
+	background-color: #64B5F6;
+	color: white;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.music-btn:hover {
+	background-color: #42A5F5;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+	<h1>NIK PUTRI ALYA PERSONAL WEBSITE 💙</h1>
+</header>
+
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="aboutme.html">About Me</a></li>
+		<li><a href="family.html">Family</a></li>
+		<li><a href="education.html">Education</a></li>
+		<li><a href="friends.html">Friends</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+	</ul>
+</nav>
+
+<main>
+
+	<div class="about-box">
+		<h2>About Me</h2>
+		<p>
+			Hi, I’m Putri Alya 🌷  
+			A gentle soul who loves calm moments, soft colours, and meaningful memories.  
+			I’m a diploma student in Information Management who believes that happiness lives in the little things — quiet mornings, peaceful skies, soothing music, and moments that make the heart feel at ease 💫  
+			This website is my personal space to share memories, stories, and pieces of my journey.
+		</p>
+	</div>
+
+	<h3 class="section-title">My Journey ✨</h3>
+
+	<div class="polaroid-section">
+		<div class="polaroid">
+			<img src="IMAGES/alif1.JPG">
+			<p>Putri at 1 year old — the beginning of everything 🤍</p>
+		</div>
+
+		<div class="polaroid">
+			<img src="IMAGES/alif2.JPG">
+			<p>18 years old, learning and growing stronger 🌱</p>
+		</div>
+
+		<div class="polaroid">
+			<img src="IMAGES/alif3.JPG">
+			<p>My favourite braces colour — mint green 💚</p>
+		</div>
+
+		<div class="polaroid">
+			<img src="IMAGES/alif4.JPG">
+			<p>A new chapter begins — AGM Prime Mover 2024/2025 ✨</p>
+		</div>
+	</div>
+
+	<h3 class="section-title">Little Moments 💙</h3>
+
+	<div class="polaroid-section">
+		<div class="polaroid">
+			<img src="IMAGES/alya.JPG">
+			<p>Blue — one of my favourite colours 💙</p>
+		</div>
+
+		<div class="polaroid">
+			<img src="IMAGES/putri1.JPG">
+			<p>A beautiful day at the drawbridge 🌉</p>
+		</div>
+
+		<div class="polaroid">
+			<img src="IMAGES/putri2.JPG">
+			<p>My favourite kebaya — feeling confident 💃</p>
+		</div>
+
+		<div class="polaroid">
+			<img src="IMAGES/8.JPG">
+			<p>A simple OOTD from me ✨</p>
+		</div>
+	</div>
+
+	<audio id="bg-music" controls autoplay loop>
+		<source src="IMAGES/Insomniacks - Reminisensi.mp3" type="audio/mpeg">
+	</audio>
+	<br>
+	<button class="music-btn" onclick="document.getElementById('bg-music').paused ? document.getElementById('bg-music').play() : document.getElementById('bg-music').pause()">🎶 Play / Pause Music</button>
+
+</main>
+
+<footer>
+	&copy; 2025 | For educational purposes only | Designed by Nik Putri Alya
+</footer>
+
+</body>
+</html>

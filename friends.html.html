@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Friends | Nik Putri Alya</title>
+
+<style>
+/* ————————— BODY ————————— */
+body {
+	background-color: #E8F3FF;
+	font-family: Garamond, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-image: url('IMAGES/background-pattern.png'); /* background comel */
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+/* ————————— HEADER ————————— */
+header {
+	background-color: #5BA4F5;
+	color: white;
+	padding: 25px 0;
+	text-align: center;
+	font-weight: bold;
+	font-size: 28px;
+	text-shadow: 0 0 10px #BFE0FF;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+	border-radius: 0 0 20px 20px;
+}
+
+/* ————————— NAV BAR ————————— */
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-color: #CFE4FF;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+	border-radius: 10px;
+}
+
+nav ul li a {
+	display: block;
+	color: #0A3D66;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+nav ul li a:hover {
+	background-color: #5BA4F5;
+	color: white;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #5BA4F5;
+}
+
+/* ————————— MAIN BOX ————————— */
+main {
+	flex: 1;
+	background-color: rgba(216,235,255,0.9);
+	padding: 25px;
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 120px auto;
+	border-radius: 20px;
+	box-shadow: 0 0 20px rgba(91, 164, 245, 0.6);
+}
+
+main h2 {
+	color: #074B88;
+	text-shadow: 0 0 8px #BFDFFF;
+	font-size: 28px;
+	margin-bottom: 15px;
+}
+
+main p {
+	color: #053B6B;
+	font-size: 18px;
+	margin-bottom: 25px;
+}
+
+/* ————————— POLAROID GALLERY ————————— */
+.polaroid-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 25px;
+	margin-top: 30px;
+	position: relative;
+}
+
+.polaroid {
+	background-color: #fff;
+	padding: 10px 10px 20px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	width: 200px;
+	position: relative;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.polaroid::before {
+	content: "";
+	position: absolute;
+	top: -15px;
+	left: 50%;
+	width: 2px;
+	height: 15px;
+	background: #999;
+	transform: translateX(-50%);
+}
+
+.polaroid img {
+	width: 100%;
+	border-radius: 8px;
+}
+
+.polaroid p {
+	font-size: 14px;
+	color: #003366;
+	margin-top: 8px;
+	font-style: italic;
+	padding: 0 5px;
+	text-align: center;
+}
+
+/* Random rotation for cute messy look */
+.polaroid:nth-child(odd) { transform: rotate(-5deg); }
+.polaroid:nth-child(even) { transform: rotate(4deg); }
+.polaroid:hover { transform: scale(1.05) rotate(0deg); box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
+
+/* ————————— FOOTER ————————— */
+footer {
+	background: #5BA4F5;
+	color: white;
+	text-align: center;
+	padding: 15px 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	font-size: 0.9em;
+	font-weight: bold;
+	text-shadow: 0 0 8px #CFE6FF;
+	box-shadow: 0 -2px 10px rgba(0, 0, 0, .3);
+	position: fixed;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+	<h1>NIK PUTRI ALYA PERSONAL WEBSITE</h1>
+</header>
+
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="aboutme.html">About Me</a></li>
+		<li><a href="family.html">Family</a></li>
+		<li><a href="education.html">Education</a></li>
+		<li><a href="friends.html">Friends</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+	</ul>
+</nav>
+
+<main>
+	<h2>💙 MY FRIENDS 💙</h2>
+	<p>This is my biggest supporter after my family</p>
+
+	<div class="polaroid-gallery">
+		<div class="polaroid">
+			<img src="IMAGES/1.JPG" alt="Friend 1">
+			<p>Kacip Member 🌸</p>
+		</div>
+		<div class="polaroid">
+			<img src="IMAGES/2.JPG" alt="Friend 2">
+			<p>Always supporting me 💫</p>
+		</div>
+		<div class="polaroid">
+			<img src="IMAGES/3.JPG" alt="Friend 3">
+			<p>Intern Partner 😄</p>
+		</div>
+		<div class="polaroid">
+			<img src="IMAGES/4.JPG" alt="Friend 4">
+			<p>Since sem 1 🎉</p>
+		</div>
+		<div class="polaroid">
+			<img src="IMAGES/5.JPG" alt="Friend 5">
+			<p>Sweet memories 💖</p>
+		</div>
+		<div class="polaroid">
+			<img src="IMAGES/kakak.JPG" alt="Friend 6">
+			<p>Close sisterhood 🌟</p>
+		</div>
+		<div class="polaroid">
+			<img src="IMAGES/hanis.JPG" alt="Friend 7">
+			<p>Always cheerful 😍</p>
+		</div>
+		<div class="polaroid">
+			<img src="IMAGES/paly.JPG" alt="Friend 8">
+			<p>Unforgettable times 💙</p>
+		</div>
+	</div>
+
+</main>
+
+<footer>
+	<p>&copy; 2025 | This website is for educational purposes only for NIK PUTRI ALYA IRDINA</p>
+</footer>
+
+</body>
+</html>
